@@ -1,4 +1,4 @@
-package com.example.kotlins._12KtHttp.v3
+package com.example.kotlins._12KtHttp.v3_suspend
 
 import com.google.gson.Gson
 import kotlinx.coroutines.suspendCancellableCoroutine
@@ -7,7 +7,6 @@ import okhttp3.Response
 import java.io.IOException
 import java.lang.reflect.Type
 import kotlin.Exception
-import kotlin.coroutines.resumeWithException
 
 class KtCall<T : Any>(
     private val call: Call,

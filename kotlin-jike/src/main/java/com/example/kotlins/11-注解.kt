@@ -1,8 +1,8 @@
 package com.example.kotlins
 
 import com.example.kotlins._12KtHttp.ApiServer
-import com.example.kotlins._12KtHttp.KtHttpV1
-import com.example.kotlins._12KtHttp.KtHttpV2
+import com.example.kotlins._12KtHttp.v1_java.KtHttpV1
+import com.example.kotlins._12KtHttp.v2_kotlin.KtHttpV2
 
 /**
  * 注解
@@ -18,13 +18,13 @@ fun main() {
 
     KtHttpV1.baseUrl = "https://api.github.com"
     val apiServer = KtHttpV1.create(ApiServer::class.java)
-    val data = apiServer.repos(lang = "Kotlin", since = "weekly")
+    val data = apiServer.reposSuspend(lang = "Kotlin", since = "weekly")
     println(data)
 
 
     KtHttpV2.baseUrl = "https://api.github.com"
     val apiServer2: ApiServer = KtHttpV2.create()
-    val data2 = apiServer2.repos(lang = "Kotlin", since = "weekly")
+    val data2 = apiServer2.reposSuspend(lang = "Kotlin", since = "weekly")
     println(data2)
 
 }

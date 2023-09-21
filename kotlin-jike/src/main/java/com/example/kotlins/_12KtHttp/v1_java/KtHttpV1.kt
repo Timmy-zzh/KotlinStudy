@@ -1,4 +1,4 @@
-package com.example.kotlins._12KtHttp
+package com.example.kotlins._12KtHttp.v1_java
 
 import com.example.kotlins._12KtHttp.annotations.Field
 import com.example.kotlins._12KtHttp.annotations.GET

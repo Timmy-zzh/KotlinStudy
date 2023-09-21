@@ -1,15 +1,10 @@
-package com.example.kotlins._12KtHttp
+package com.example.kotlins._12KtHttp.v3_suspend
 
 import com.example.kotlins._12KtHttp.annotations.Field
 import com.example.kotlins._12KtHttp.annotations.GET
-import com.example.kotlins._12KtHttp.v3.KtCall
 import com.google.gson.Gson
-import okhttp3.Call
-import okhttp3.Callback
 import okhttp3.OkHttpClient
 import okhttp3.Request
-import okhttp3.Response
-import java.io.IOException
 import java.lang.reflect.InvocationHandler
 import java.lang.reflect.Method
 import java.lang.reflect.ParameterizedType

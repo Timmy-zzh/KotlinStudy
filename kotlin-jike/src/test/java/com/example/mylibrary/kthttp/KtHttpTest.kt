@@ -1,10 +1,10 @@
 package com.example.mylibrary.kthttp
 
 import com.example.kotlins._12KtHttp.ApiServer
-import com.example.kotlins._12KtHttp.KtHttpV1
-import com.example.kotlins._12KtHttp.KtHttpV3
+import com.example.kotlins._12KtHttp.v1_java.KtHttpV1
+import com.example.kotlins._12KtHttp.v3_suspend.KtHttpV3
 import com.example.kotlins._12KtHttp.bean.RepoList
-import com.example.kotlins._12KtHttp.v3.Callback
+import com.example.kotlins._12KtHttp.v3_suspend.Callback
 import kotlin.test.Test
 
 class KtHttpTest {
@@ -27,7 +27,7 @@ class KtHttpTest {
 
         val apiServer = KtHttpV3.create(ApiServer::class.java)
 
-        val ktCall = apiServer.repos(lang = "Kotlin", since = "weekly")
+        val ktCall = apiServer.reposSuspend(lang = "Kotlin", since = "weekly")
         println("---- $ktCall")
 
         ktCall.request(object : Callback<RepoList> {

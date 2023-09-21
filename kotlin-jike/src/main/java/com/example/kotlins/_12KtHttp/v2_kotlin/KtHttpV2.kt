@@ -1,4 +1,4 @@
-package com.example.kotlins._12KtHttp
+package com.example.kotlins._12KtHttp.v2_kotlin
 
 import com.example.kotlins._12KtHttp.annotations.Field
 import com.example.kotlins._12KtHttp.annotations.GET
@@ -64,7 +64,7 @@ object KtHttpV2 {
         method.parameterAnnotations
             .takeIf { method.parameterAnnotations.size == args.size }
             ?.mapIndexed { index, annotations -> Pair(annotations, args[index]) }
-            ?.fold(path, ::parseUrl)
+            ?.fold(path, KtHttpV2::parseUrl)
             ?.let {
                 println("url:$it")
                 Request.Builder().url(it).build()
