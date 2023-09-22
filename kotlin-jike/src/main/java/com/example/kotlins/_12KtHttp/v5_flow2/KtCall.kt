@@ -45,23 +45,23 @@ class KtCall<T : Any>(
     }
 }
 
-suspend fun <T : Any> KtCall<T>.asFlow() = callbackFlow<T> {
-    val call = request(object : Callback<T> {
-        override fun onSuccess(data: T) {
-            trySendBlocking(data)
-                .onSuccess { close() }
-                .onFailure {
-                    close(it)
-                }
-        }
-
-        override fun onFail(throwable: Throwable) {
-            close(throwable)
-        }
-    })
-
-    awaitClose { call.cancel() }
-}
+//suspend fun <T : Any> KtCall<T>.asFlow() = callbackFlow<T> {
+//    val call = request(object : Callback<T> {
+//        override fun onSuccess(data: T) {
+//            trySendBlocking(data)
+//                .onSuccess { close() }
+//                .onFailure {
+//                    close(it)
+//                }
+//        }
+//
+//        override fun onFail(throwable: Throwable) {
+//            close(throwable)
+//        }
+//    })
+//
+//    awaitClose { call.cancel() }
+//}
 
 // 支持挂起函数
 //suspend fun <T : Any> KtCall<T>.await(): T =

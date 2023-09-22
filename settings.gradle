@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "KotlinStudy"
 include ':app'
 include ':kotlin-jike'
+include ':trendingp'
