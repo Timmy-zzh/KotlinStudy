@@ -1,9 +1,9 @@
-package com.timmy.trending.case1
+package com.timmy.trending.domain
 
-import com.timmy.trending.bean.RepoList
-import com.timmy.trending.bean.ResultX
-import com.timmy.trending.data.IRepository
-import com.timmy.trending.data.MainRepository
+import com.timmy.trending.data.entity.ResultX
+import com.timmy.trending.data.entity.RepoList
+import com.timmy.trending.data.repository.IRepository
+import com.timmy.trending.data.repository.MainRepository
 
 /**
  * 领域层

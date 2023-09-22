@@ -1,4 +1,4 @@
-package com.timmy.trending.bean
+package com.timmy.trending.data.entity
 
 import java.lang.Exception
 

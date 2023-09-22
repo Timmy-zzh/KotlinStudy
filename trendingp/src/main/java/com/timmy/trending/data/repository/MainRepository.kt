@@ -1,7 +1,9 @@
-package com.timmy.trending.data
+package com.timmy.trending.data.repository
 
-import com.timmy.trending.bean.RepoList
-import com.timmy.trending.bean.ResultX
+import com.timmy.trending.data.source.remote.RemoteRepoDataSource
+import com.timmy.trending.data.entity.RepoList
+import com.timmy.trending.data.entity.ResultX
+import com.timmy.trending.data.source.RepoDataSource
 
 /**
  * 数据层 - 仓库

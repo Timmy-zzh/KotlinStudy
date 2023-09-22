@@ -1,7 +1,8 @@
-package com.timmy.trending.data
+package com.timmy.trending.network
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import com.timmy.trending.network.service.RepoService
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -38,7 +39,7 @@ object RetrofitClient {
     private fun <S> getService(
         service: Class<S>,
         baseUrl: String,
-        client: OkHttpClient = this.okHttpClient
+        client: OkHttpClient = okHttpClient
     ): S {
         return Retrofit.Builder()
             .client(client)

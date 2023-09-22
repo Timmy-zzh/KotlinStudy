@@ -1,13 +1,13 @@
-package com.timmy.trending
+package com.timmy.trending.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.timmy.trending.adapter.RepoAdapter
-import com.timmy.trending.bean.RepoList
+import com.timmy.trending.data.entity.RepoList
 import com.timmy.trending.databinding.ActivityMainBinding
-import com.timmy.trending.vm.MainViewModel
+import com.timmy.trending.ui.adapter.RepoAdapter
+import com.timmy.trending.ui.vm.MainViewModel
 
 class MainActivity : AppCompatActivity() {
 

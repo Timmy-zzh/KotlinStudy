@@ -1,4 +1,4 @@
-package com.timmy.trending.adapter
+package com.timmy.trending.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.timmy.trending.R
-import com.timmy.trending.bean.RepoList
+import com.timmy.trending.data.entity.RepoList
 
 class RepoAdapter(private val repoList: RepoList) : RecyclerView.Adapter<RepoAdapter.RepoHolder>() {
 

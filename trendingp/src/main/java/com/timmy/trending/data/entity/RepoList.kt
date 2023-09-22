@@ -1,4 +1,4 @@
-package com.timmy.trending.bean
+package com.timmy.trending.data.entity
 
 data class RepoList(
     val count: Int = 0,

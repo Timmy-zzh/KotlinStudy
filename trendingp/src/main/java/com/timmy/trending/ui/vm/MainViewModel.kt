@@ -1,13 +1,13 @@
-package com.timmy.trending.vm
+package com.timmy.trending.ui.vm
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.timmy.trending.bean.Repo
-import com.timmy.trending.bean.RepoList
-import com.timmy.trending.bean.ResultX
-import com.timmy.trending.case1.GetRepoListUseCase
+import com.timmy.trending.data.entity.Repo
+import com.timmy.trending.data.entity.RepoList
+import com.timmy.trending.data.entity.ResultX
+import com.timmy.trending.domain.GetRepoListUseCase
 import kotlinx.coroutines.launch
 
 class MainViewModel(

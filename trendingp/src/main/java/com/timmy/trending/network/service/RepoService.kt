@@ -1,6 +1,6 @@
-package com.timmy.trending.data
+package com.timmy.trending.network.service
 
-import com.timmy.trending.bean.RepoList
+import com.timmy.trending.data.entity.RepoList
 import retrofit2.http.GET
 import retrofit2.http.Query
 

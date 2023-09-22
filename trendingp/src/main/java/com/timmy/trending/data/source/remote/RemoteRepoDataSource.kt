@@ -1,8 +1,10 @@
-package com.timmy.trending.data
+package com.timmy.trending.data.source.remote
 
 import android.util.Log
-import com.timmy.trending.bean.RepoList
-import com.timmy.trending.bean.ResultX
+import com.timmy.trending.network.RetrofitClient
+import com.timmy.trending.data.entity.RepoList
+import com.timmy.trending.data.entity.ResultX
+import com.timmy.trending.data.source.RepoDataSource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.lang.Exception
