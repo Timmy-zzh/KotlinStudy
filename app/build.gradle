@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.example.myapplication'
-    compileSdk 33
+    compileSdk androidV.compileSdk
 
     defaultConfig {
         applicationId "com.example.myapplication"
         minSdk 24
-        targetSdk 33
+        targetSdk androidV.targetSdk
         versionCode 1
         versionName "1.0"
 
@@ -50,4 +50,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     implementation project(":kotlin-jike")
+
+    // Glide依赖了okhttp库进行图片请求吗？
+//    implementation libs.glide
+    implementation libs.rxJava2
+
 }

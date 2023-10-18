@@ -1,0 +1,25 @@
+ext.androidV = [compileSdk : 33,
+               minSdk     : 24,
+               targetSdk  : 33,
+               versionCode: 1,
+               versionName: "1.0"]
+
+//ext.versions = [
+//        gson             : '2.8.0',
+//]
+
+ext.libs = [
+        //        gson                   : "com.google.code.gson:gson:$versions.gson",
+        gson                   : "com.google.code.gson:gson:2.8.0",
+        //ok http        okhttpLib              : "com.squareup.okhttp3:okhttp:$versions.okhttp",
+        okhttpInterceptor      : "com.squareup.okhttp3:logging-interceptor:3.5.0",
+        //retrofit2
+        retrifit2Lib           : "com.squareup.retrofit2:retrofit:2.1.0",
+        retrifit2Gson          : "com.squareup.retrofit2:converter-gson:2.1.0",
+        retrifit2Rxjava2Adapter: "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0",
+        //rx
+        rxAndroid              : "io.reactivex.rxjava2:rxandroid:2.0.1",
+        rxJava2                : "io.reactivex.rxjava2:rxjava:2.0.2",
+        //glide
+        glide                  : "com.github.bumptech.glide:glide:3.7.0"]
+
