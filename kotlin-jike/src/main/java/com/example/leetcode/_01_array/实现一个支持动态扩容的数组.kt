@@ -1,4 +1,4 @@
-package com.example.leetcode.array
+package com.example.leetcode._01_array
 
 import com.example.leetcode.print
 

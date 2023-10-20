@@ -1,4 +1,4 @@
-package com.example.leetcode.linked
+package com.example.leetcode._02_linked
 
 import com.example.leetcode.bean.ListNode
 

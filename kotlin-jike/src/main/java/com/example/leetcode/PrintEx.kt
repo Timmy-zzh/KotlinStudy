@@ -1,6 +1,7 @@
 package com.example.leetcode
 
 import com.example.leetcode.bean.ListNode
+import java.util.Stack
 
 fun List<Int>.print() {
     this.forEach {
@@ -28,6 +29,13 @@ fun ListNode?.print() {
     while (node != null) {
         print("${node.`val`} ,")
         node = node.next
+    }
+    println()
+}
+
+fun Stack<String>?.print() {
+    this?.forEach {
+        print("$it ,")
     }
     println()
 }
